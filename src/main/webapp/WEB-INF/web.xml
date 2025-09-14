@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+    <servlet>
+        <servlet-name>AlbumServlet</servlet-name>
+        <servlet-class>com.example.demo16.servlet.AlbumServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AlbumServlet</servlet-name>
+        <url-pattern>/albums</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.example.demo16.servlet.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DownloadServlet</servlet-name>
+        <servlet-class>com.example.demo16.servlet.DownloadServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DownloadServlet</servlet-name>
+        <url-pattern>/download</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.example.demo16.servlet.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>albums</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>DeleteCookiesServlet</servlet-name>
+        <servlet-class>com.example.demo16.servlet.DeleteCookiesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteCookiesServlet</servlet-name>
+        <url-pattern>/deleteCookies</url-pattern>
+    </servlet-mapping>
+
+</web-app>
